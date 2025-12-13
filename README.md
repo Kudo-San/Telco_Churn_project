@@ -1,4 +1,63 @@
 # Telco_Churn_project
+# 📡 TELCON · Customer Intelligence Platform
+
+Plataforma de análise preditiva desenvolvida para **antecipar churn de clientes** e **apoiar decisões estratégicas de retenção** em empresas de Telecom.
+
+---
+
+## 🎯 Objetivo do Produto
+A TELCON Customer Intelligence utiliza **Machine Learning** para:
+- Identificar clientes com alto risco de churn
+- Estimar impacto financeiro (MRR e LTV)
+- Recomendar ações de retenção ou expansão
+- Apoiar gestores com visão clara, visual e orientada a negócio
+
+---
+
+## 🧠 Solução
+A plataforma combina:
+- Modelo preditivo de churn (XGBoost)
+- Engenharia de atributos orientada a comportamento do cliente
+- Dashboard executivo com UX corporativo
+- Visualização clara de risco e ação recomendada
+
+---
+
+## 🖥️ Interface
+- Dashboard executivo sem rolagem
+- KPIs estratégicos (Risco, Probabilidade, Receita, LTV)
+- Modo Claro / Modo Escuro
+- Recomendações automáticas baseadas no score
+- Experiência pensada para gestores e times de retenção
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+- Python
+- Streamlit
+- Pandas
+- Scikit-learn
+- XGBoost
+- Plotly
+- UX/UI customizado com CSS
+
+---
+
+## 📊 Modelo de Machine Learning
+- Algoritmo: XGBoost Classifier
+- Tipo: Classificação binária (Churn / Não Churn)
+- Métrica foco: Probabilidade de churn
+- Threshold ajustável para estratégia de negócio
+
+---
+
+## 🚀 Como Executar Localmente
+bash
+pip install -r requirements.txt
+streamlit run app.py
+
+
+---
 <h1 align="center">🧑🏻‍💻 Marcelo Kudo</h1>
 
 <p align="center">
