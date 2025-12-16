@@ -1,12 +1,23 @@
-# Telco_Churn_project
-# 📡 TELCON · Customer Intelligence Platform
 
-Plataforma de análise preditiva desenvolvida para **antecipar churn de clientes** e **apoiar decisões estratégicas de retenção** em empresas de Telecom.
+# 📡 Telco Customer Churn Prediction
 
----
+![Status](https://img.shields.io/badge/Status-Concluído-success)
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
 
-## 🎯 Objetivo do Produto
-A TELCON Customer Intelligence utiliza **Machine Learning** para:
+## 💼 Sobre o Projeto
+
+Este projeto é uma solução completa (End-to-End) desenvolvida para prever a rotatividade de clientes (Churn) em uma empresa de Telecomunicações. 
+
+O objetivo não foi apenas treinar um modelo, mas criar uma **ferramenta de suporte à decisão** que permitisse à equipe de retenção identificar clientes em risco e agir preventivamente, focando no impacto financeiro (ROI).
+
+### 🎯 Resultados Alcançados
+
+* **Recall de 79%:** O modelo é capaz de identificar a grande maioria dos clientes em risco.
+* **Aumento de Lucro:** Implementação de threshold otimizado financeiramente, superando a estratégia padrão em **R$ 4.000,00/mês** (simulação em base de teste).
+* **App Interativo:** Dashboard para uso da equipe de CS (Customer Success) com recomendações automáticas.
+
+* A TELCON Customer Intelligence utiliza **Machine Learning** para:
 - Identificar clientes com alto risco de churn
 - Estimar impacto financeiro (MRR e LTV)
 - Recomendar ações de retenção ou expansão
@@ -14,112 +25,39 @@ A TELCON Customer Intelligence utiliza **Machine Learning** para:
 
 ---
 
-## 🧠 Solução
-A plataforma combina:
-- Modelo preditivo de churn (XGBoost)
-- Engenharia de atributos orientada a comportamento do cliente
-- Dashboard executivo com UX corporativo
-- Visualização clara de risco e ação recomendada
+## 🛠️ Tecnologias Utilizadas
+
+* **Linguagem:** Python
+* **Machine Learning:** XGBoost (Gradient Boosting), Scikit-Learn
+* **Manipulação de Dados:** Pandas, Numpy
+* **Visualização:** Plotly, Matplotlib
+* **Deploy/Web App:** Streamlit
+* **Persistência:** Joblib
+* **UX/UI:** customizado com CSS
 
 ---
 
-## 🖥️ Interface
-- Dashboard executivo sem rolagem
+## 📊 O Dashboard (Streamlit)
+
+O projeto inclui uma interface gráfica onde o usuário pode simular perfis de clientes e receber:
+1.  **Probabilidade de Churn** em tempo real.
+2.  **Score de Risco** classificado (Seguro vs Crítico).
+3.  **Ações Recomendadas** baseadas em regras de negócio (ex: Migração de base, Cross-sell, Upsell).
+4.  **Dashboard executivo sem rolagem**
 - KPIs estratégicos (Risco, Probabilidade, Receita, LTV)
 - Modo Claro / Modo Escuro
 - Recomendações automáticas baseadas no score
 - Experiência pensada para gestores e times de retenção
 
----
 
-## ⚙️ Tecnologias Utilizadas
-- Python
-- Streamlit
-- Pandas
-- Scikit-learn
-- XGBoost
-- Plotly
-- UX/UI customizado com CSS
-
----
-
-## 📊 Modelo de Machine Learning
-- Algoritmo: XGBoost Classifier
-- Tipo: Classificação binária (Churn / Não Churn)
-- Métrica foco: Probabilidade de churn
-- Threshold ajustável para estratégia de negócio
+![Demo do App](https://via.placeholder.com/800x400?text=Inserir+Print+do+App+Aqui)
+*(Nota: Substitua este link pelo print real do seu app)*
 
 ---
 
 ## 🚀 Como Executar Localmente
-bash
-pip install -r requirements.txt
-streamlit run app.py
 
+1. Clone o repositório:
+```bash
+git clone [https://github.com/SEU_USUARIO/telco-churn-project.git](https://github.com/SEU_USUARIO/telco-churn-project.git)
 
----
-<h1 align="center">🧑🏻‍💻 Marcelo Kudo</h1>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=4000&pause=1500&color=00D9FF&center=true&vCenter=true&width=700&lines=🚀+Especialista+em+IA+e+Automação+Industrial;🤖+Machine+Learning+%7C+Visão+Computacional+%7C+IIoT;🏭+CLP+%7C+Robô+Industrial+%7C+UR+%7C+NVIDIA;⚙️+Indústria+4.0+;✨+Desenvolvendo+soluções+que+geram+impacto+" alt="Header animado">
-</p>
-
----
-
-<div align="center">
-  
-## 🛠️ **Stack Tecnológico**
-
-### 🤖 **Inteligência Artificial & Machine Learning**
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-
-### ⚙️ **Automação Industrial**
-![CLP](https://img.shields.io/badge/CLP-0065B3?style=for-the-badge&logo=rockwellautomation&logoColor=white)
-![Robô Industrial](https://img.shields.io/badge/Robô_Industrial-FF0000?style=for-the-badge&logo=robot&logoColor=white)
-![UR](https://img.shields.io/badge/Universal_Robots-000000?style=for-the-badge&logo=universalrobots&logoColor=white)
-![IIoT](https://img.shields.io/badge/IIoT-0088CC?style=for-the-badge&logo=iot&logoColor=white)
-
-### 🖥️ **Hardware & Sistemas**
-![NVIDIA Jetson](https://img.shields.io/badge/NVIDIA_Jetson-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
-
-### 📊 **Análise de Dados & Visualização**
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-
-</div>
-
----
-<div align="center">
-
-## 🧠 **Sobre Mim**
-
-Profissional com expertise entre **automação industrial** e **inteligência artificial**, focando em desenvolver soluções para a **Indústria 4.0**.
-
-### 🎯 **Expertise Técnica**
-
-| **Área** | **Competências** |
-|----------|------------------|
-| **🤖 Automação Industrial** | Programação de CLP's, IHM, Inversor de Frequência |
-| **👁️ Visão Computacional** | OpenCV, PyTorch, detecção de defeitos, classificação, aplicações industriais |
-| **🧠 Machine Learning** | Modelos preditivos, redes neurais, scikit-learn, TensorFlow |
-| **⚡ Edge Computing** | NVIDIA Jetson, otimização para hardware embarcado |
-| **🤝 Robótica** | Robôs colaborativos UR, robótica industrial |
-| **🌐 IIoT** | Integração de sistemas, protocolos industriais |
-| **📊 Análise de Dados** | Pandas, NumPy, análise exploratória, visualização com Seaborn/Matplotlib |
-| **📈 Dashboards** | Streamlit, Power BI, SQL, relatórios interativos para tomada de decisão |
-
-"Tecnologia é poderosa quando resolve problemas reais."
-
-</div>
