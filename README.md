@@ -1,7 +1,7 @@
 
-
-
 # 📡 Telco Customer Churn Prediction
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/34f53b1f-46b0-485e-8068-185973052333" />
 
 ![Status](https://img.shields.io/badge/Status-Concluído-success)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
@@ -47,7 +47,7 @@ O projeto inclui uma interface gráfica onde o gestor pode simular perfis e rece
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🖥️ Tecnologias Utilizadas
 
 * **Linguagem:** Python
 * **Machine Learning:** XGBoost, Scikit-Learn
@@ -59,7 +59,7 @@ O projeto inclui uma interface gráfica onde o gestor pode simular perfis e rece
 
 ---
 
-## 🚀 Como Executar Localmente
+## 💻 Como Executar Localmente
 
 1. Clone o repositório:
 ```bash
@@ -77,3 +77,6 @@ streamlit run app.py
 ```
 
 ---
+
+### 👨‍💻 Autor
+Desenvolvido por Marcelo Kudo
