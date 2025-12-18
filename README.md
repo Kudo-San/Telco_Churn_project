@@ -33,6 +33,35 @@ A decisão de corte (threshold) não foi arbitrária (padrão 0.50). Realizamos 
 
 ---
 
+## 🧠 Lógica de Decisão (Pipeline)
+
+O sistema não entrega apenas uma probabilidade, ele toma decisões baseadas no perfil do cliente:
+
+```mermaid
+flowchart TD
+    Start([Início: Input do Usuário]) --> Process[Processamento de Dados]
+    Process --> Model{XGBoost Predict}
+    Model -->|Probabilidade| Decisao{Prob >= 0.52?}
+    
+    Decisao -- Sim (Crítico) --> Red[🚨 STATUS: CRÍTICO]
+    Red --> Action1[Ação: Ligar para o Cliente + Desconto]
+    
+    Decisao -- Não (Seguro) --> Green[✅ STATUS: SEGURO]
+    Green --> CheckProd{Tem Internet?}
+    
+    CheckProd -- Não (Só Telefone) --> CrossSell[🎯 Cross-Sell: Ofertar Combo]
+    CheckProd -- Sim --> UpSell[📈 Up-Sell: Ofertar Upgrade]
+
+    Action1 --> Dashboard[Exibir Dashboard]
+    CrossSell --> Dashboard
+    UpSell --> Dashboard
+    
+    style Red fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+    style Green fill:#ccffcc,stroke:#00cc00,stroke-width:2px
+    style CrossSell fill:#e6f3ff,stroke:#333,stroke-dasharray: 5 5
+```
+
+---
 ## 📊 O Dashboard (Streamlit)
 
 O projeto inclui uma interface gráfica onde o gestor pode simular perfis e receber diagnósticos em tempo real.
